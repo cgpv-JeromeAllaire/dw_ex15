@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "compteur compteur compteur"
+        "bouton-moins bouton-plus increment"
+        "reinitialiser reinitialiser reinitialiser";
+    gap: 10px;
+}
+
+#compteur {
+    grid-area: compteur;
+    border: solid #666464 1.5px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#bouton-moins {
+    grid-area: bouton-moins;
+    border: solid #666464 1.5px;
+    border-radius: 5px;
+}
+
+#bouton-plus {
+    grid-area: bouton-plus;
+    border: solid #666464 1.5px;
+    border-radius: 5px;
+}
+
+#increment {
+    grid-area: increment;
+    border: solid #666464 1.5px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#reinitialiser {
+    grid-area: reinitialiser;
+    border: solid #666464 1.5px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.negatif {
+    color: red;
+}
